@@ -1,0 +1,16 @@
+table{
+    text-align: center;
+}
+
+.titulo{
+    padding-top: 30px;
+}
+
+#titulo-form{
+    padding-top: 30px;
+}
+
+.paciente-invalido{
+    font-weight: bold;
+    background-color: lightcoral;
+}
