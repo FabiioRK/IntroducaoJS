@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fábio Nutrição LTDA</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/png/128/1951/1951386.png">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="titulo-principal">Fábio Nutrição LTDA</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2 class="titulo">Meus pacientes</h2>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Peso(kg)</th>
+                        <th>Altura(m)</th>
+                        <th>Gordura Corporal(%)</th>
+                        <th>IMC</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-pacientes">
+                    <tr class="paciente">
+                        <td class="info-nome">Fábio</td>
+                        <td class="info-peso">60</td>
+                        <td class="info-altura">1.77</td>
+                        <td class="info-gordura">30</td>
+                        <td class="info-imc">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="container">
+            <h2 id="titulo-form">Adicionar novo paciente</h2>
+            <ul id="mensagens-erro"></ul>
+            <form id="form-adiciona">
+                <div class="form-group ">
+                    <label for="nome">Nome:</label>
+                    <input class="form-control" id="nome" name="nome" type="text"
+                        placeholder="Digite o nome do seu paciente" class="campo">
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="peso">Peso:</label>
+                        <input class="form-control" id="peso" name="peso" type="text"
+                            placeholder="Digite o peso do seu paciente" class="campo campo-medio">
+                    </div>
+
+                    <div class="form-group col">
+                        <label for="altura">Altura:</label>
+                        <input class="form-control" id="altura" name="altura" type="text"
+                            placeholder="Digite a altura do seu paciente" class="campo campo-medio">
+                    </div>
+                    <div class="form-group col">
+                        <label for="gordura">% de Gordura:</label>
+                        <input class="form-control" id="gordura" type="text"
+                            placeholder="Digite a  %  de gordura do seu paciente" class="campo campo-medio">
+                    </div>
+                </div>
+
+                <button id="adicionar-paciente" class="btn btn-dark">Adicionar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <script src="js/calcula-imc.js"></script>
+    <script src="js/adiciona-paciente.js"></script>
+
+</body>
+
+</html>
