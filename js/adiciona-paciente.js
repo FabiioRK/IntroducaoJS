@@ -17,6 +17,8 @@ botaoAdicionar.addEventListener("click", function (event) {
     var tbody = document.querySelector("#tabela-pacientes");
     tbody.appendChild(pacienteTr);
     form.reset();
+
+    alert("Passando aqui pra dizer que o Fábio te ama e sempre vai te amar demais, independente do que aconteça, ele vai sempre estar ao seu lado, você é tudo pra ele")
 });
 
 function montaTr(p) {
