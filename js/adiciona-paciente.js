@@ -12,16 +12,11 @@ botaoAdicionar.addEventListener("click", function (event) {
         imc: calculaImc(form.peso.value, form.altura.value)
     }
 
-    console.log(paciente);
-
     var pacienteTr = montaTr(paciente);
-    console.log(pacienteTr);
 
     var tbody = document.querySelector("#tabela-pacientes");
     tbody.appendChild(pacienteTr);
     form.reset();
-
-
 });
 
 function montaTr(p) {
